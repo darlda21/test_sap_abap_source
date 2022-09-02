@@ -1,0 +1,3 @@
+sap.ui.define(["sap/ui/core/mvc/Controller"],function(t){"use strict";return t.extend("sync.zca06nav01.controller.View1",{onInit:function(){this._fnGetService=sap.ushell&&sap.ushell.Container&&sap.ushell.Container.getService;this._oCrossAppNavigation=thi+
+s._fnGetService&&this._fnGetService("CrossApplicationNavigation")},onTableItemClick:function(t){let e=t.getSource().getBindingContext();let i=e.getProperty("Carrid");if(this._oCrossAppNavigation){let t=this._oCrossAppNavigation.toExternal({target:{semant+
+icObject:"CLA06",action:"navto"},params:{pCarrid:i}})}}})});                                                                                                                                                                                                   
